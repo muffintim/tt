@@ -8,9 +8,9 @@ client.on('ready', () => {
 
 
 client.on('message', message => { // هاذا للبرودكسات
-        var prefix = '!'; // هنا تقدر تغير البرفكس
+        var prefix = '$'; // هنا تقدر تغير البرفكس
 	var command = message.content.split(" ")[0];
-	if(command == prefix + 'bc') { // الكوماند !bc
+	if(command == prefix + 'bc') { // الكوماند $bc
 		if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You don`t have **MANAGE_MESSAGES** permission!");
 		var args = message.content.split(' ').slice(1).join(' ');
 		if(message.author.bot) return;
@@ -61,4 +61,4 @@ client.on('message', message => { // هاذا للبرودكسات
 
 
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);NTQ2Njk2MjQwOTkwMjU3MTYy.D1V_tQ.9ZfgvcZvqDS_5n43qc97lk6VNeI
